@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Ирина Чекурова](https://up.htmlacademy.ru/htmlcss/29/user/1529381).
-* Наставник: [Константин Соколов](https://up.htmlacademy.ru/htmlcss/29/user/243814).
+* Наставник: [Константин Соколов](https://htmlacademy.ru/profile/costigans).
 
 ---
 
