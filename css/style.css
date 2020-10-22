@@ -1,0 +1,396 @@
+:root {
+  --basic-black: #000000;
+  --basic-dark-gray: #283136;
+  --basic-light-gray: #e1e1e1;
+  --basic-gray: #a6a6a6;
+  --basic-background-gray: #eeeeee;
+  --basic-form-gray: #4d4d4d;
+  --basic-maket-gray: #666666;
+  --basic-hover-btn-grey: #dfdfdf;
+  --basic-active-btn-grey: #d5d5d5;
+  --basic-form-focus-text: #444444;
+  --basic-icon-up-down: #231f20;
+  --basic-white: #ffffff;
+  --basic-white-transparent: rgba(255, 255, 255, 0.3);
+  --basic-red: #fb565a;
+  --basic-active-red: #d7373b;
+  --basic-hover-red: #e74246;
+  --basic-green: #00ca74;
+  --basic-active-green: #00aa62;
+  --basic-hover-green: #00bc6c;
+  --basic-yellow: #efc849;
+  --basic-active-yellow: #eab534;
+  --basic-hover-yellow: #e5a722;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+address {
+  font-size: 16px;
+  font-style: normal;
+  line-height: 18px;
+  max-width: 230px;
+  color: var(--basic-maket-gray);
+}
+
+header,
+.slider {
+  background-color: var(--basic-background-gray);
+}
+
+.menu {
+  display: inline-block;
+  position: relative;
+}
+
+.menu a {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  color: var(--basic-black);
+}
+
+.menu a:hover {
+  color: var(--basic-red);
+}
+
+.menu a:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.menu li {
+  position: relative;
+  display: inline-block;
+}
+
+.menu-active::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: var(--basic-red);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.slider-title {
+  width: 538px;
+  height: 111px;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  color: var(--basic-black);
+}
+
+.slider-text {
+  width: 400px;
+  height: 49px;
+  line-height: 24px;
+  color: var(--basic-dark-gray);
+  margin-top: 25px;
+}
+
+.btn {
+  font-size: 16px;
+  line-height: 38px;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 3px;
+  font-weight: 500;
+  display: block;
+  height: 50px;
+  line-height: 50px;
+}
+
+.slide-btn {
+  width: 240px;
+  margin-top: 38px;
+}
+
+.products-title {
+  width: 138px;
+  height: 30px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  margin-top: 25px;
+}
+
+.products-text {
+  width: 260px;
+  height: 48px;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--basic-dark-gray);
+  margin-top: 16px;
+}
+
+.products-btn {
+  width: 160px;
+  border-radius: 3px;
+}
+
+.product-1 .products-btn {
+  background: var(--basic-red);
+}
+
+.product-2 .products-btn {
+  background-color: var(--basic-green);
+}
+
+.product-3 .products-btn {
+  background: var(--basic-yellow);
+}
+.project-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+  color: var(--basic-black);
+}
+
+.project-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--basic-dark-gray);
+}
+
+.project-list-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: var(--basic-dark-gray);
+}
+
+.project-list-items {
+  margin-top: 23px;
+}
+
+.project-list-items li {
+  position: relative;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--basic-dark-gray);
+  margin-top: 25px;
+  padding-left: 32px;
+}
+
+.project-list-items li:first-child {
+  margin-top: 0;
+}
+
+.project-list-items li::before {
+  content: "";
+  background-color: var(--basic-red);
+  width: 25px;
+  height: 2px;
+  position: absolute;
+  top: 11px;
+  left: 0;
+}
+
+.termin-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: var(--basic-dark-gray);
+}
+
+.about-project dt {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-dark-gray);
+}
+
+.about-project dd {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 64px;
+  color: var(--basic-black);
+}
+
+.about-project sup {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 40px;
+  color: var(--basic-black);
+}
+
+.contacts-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.contacs-tel {
+  font-size: 16px;
+  font-style: normal;
+  line-height: 18px;
+  max-width: 230px;
+  color: var(--basic-maket-gray);
+}
+
+.contacts-btn {
+  width: 219px;
+}
+
+.promo-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  color: var(--basic-black);
+}
+
+.promo-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--basic-dark-gray);
+}
+
+.visibility-hidden {
+  visibility: hidden;
+  position: absolute;
+}
+
+.btn:hover {
+  background-color: var(--basic-hover-red);
+}
+
+.btn:active {
+  background-color: var(--basic-active-red);
+  color: var(--basic-white-transparent);
+}
+
+.product-2 .btn:hover {
+  background-color: var(--basic-hover-green);
+}
+
+.product-2 .btn:active {
+  background-color: var(--basic-active-green);
+  color: var(--basic-white-transparent);
+}
+
+.product-3 .btn:hover {
+  background-color: var(--basic-hover-yellow);
+}
+
+.product-3 .btn:active {
+  background-color: var(--basic-active-yellow);
+  color: var(--basic-white-transparent);
+}
